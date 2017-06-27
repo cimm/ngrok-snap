@@ -11,7 +11,7 @@ This is a first shot at packaging `ngrok` as a [snap](https://www.ubuntu.com/des
 If you are running Ubuntu 16.04 LTS or later, you can already use snaps. You only need the `ngrok` snap:
 
 ```
-sudo snap install ngrok-cimm --beta
+$ sudo snap install ngrok-cimm --beta
 ```
 
 For other [distros](https://snapcraft.io/docs/core/install) you might want to install `snapd` first.
@@ -28,6 +28,20 @@ $ ngrok-cimm http 5000
 
 I could have called it `ngrok` as well but didn't want to squat the `ngrok` name. I'll contact the `ngrok` developer to see if he is interested taking over the package.
 
+## Building
+
+You can build the snap yourself if you are a developer via [Snapcraft](https://snapcraft.io/). Clone this repo and run `snapcraft` from the root directory:
+
+```
+$ git clone https://github.com/cimm/ngrok-snap.git
+$ cd ngrok-snap
+$ snapcraft
+```
+
 ## Feedback & bugs
 
 Please report any feedback or bugs as a [GitHub issue](https://github.com/cimm/ngrok-snap/issues).
+
+## Disclaimer & license
+
+I am not affiliated in any way with the official [ngrok](https://ngrok.com/download) project. This git repo is licensed under the MIT license but I have say over the ngrok binary.
