@@ -1,0 +1,20 @@
+name: ngrok-cimm
+version: '2.2.4'
+summary: Secure introspectable tunnels to localhost
+description: |
+  I want to expose a local server behind a NAT or firewall to the internet.
+grade: devel # must be 'stable' to release into candidate/stable channels
+confinement: strict
+
+apps:
+  ngrok-cimm:
+    command: ngrok
+    plugs:
+      - network-bind
+
+parts:
+  ngrok:
+    source: https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+    source-type: zip
+    plugin: dump
+    install: chmod 0755 ngrok
