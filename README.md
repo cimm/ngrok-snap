@@ -38,6 +38,12 @@ $ cd ngrok-snap
 $ snapcraft
 ```
 
+You can now install the snap locally (add `--devmode` since the snap you built has not been signed by the store).
+
+```
+$ sudo snap install ngrok-cimm_0.1_amd64.snap --devmode
+```
+
 ## Feedback & bugs
 
 Please report any feedback or bugs as a [GitHub issue](https://github.com/cimm/ngrok-snap/issues).
