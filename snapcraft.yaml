@@ -1,5 +1,5 @@
 name: ngrok-cimm
-version: '2.2.4'
+version: '2.3.5'
 summary: Secure introspectable tunnels to localhost
 description: |
   I want to expose a local server behind a NAT or firewall to the internet.
